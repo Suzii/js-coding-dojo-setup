@@ -1,0 +1,37 @@
+{
+  "name": "js-coding-dojo-setup",
+  "version": "1.0.0",
+  "description": "Basic environment set-up for JS (or TypeScript) coding dojo using Mocha tests and WebStorm IDE",
+  "author": "Suzii",
+  "license": "ISC",
+  "homepage": "https://github.com/Suzii/js-coding-dojo-setup#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Suzii/js-coding-dojo-setup.git"
+  },
+  "keywords": [
+    "coding",
+    "dojo",
+    "mocha",
+    "tdd",
+    "typescript",
+    "javascript"
+  ],
+  "main": "index.js",
+  "dependencies": {
+    "@types/chai": "^3.4.35",
+    "@types/mocha": "^2.2.39",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "typescript": "^2.1.6"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec --require babel-polyfill --compilers ts:ts-node/register,js:babel-register"
+  },
+  "devDependencies": {
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.1.8",
+    "babel-register": "^6.23.0",
+    "ts-node": "^2.1.0"
+  }
+}
