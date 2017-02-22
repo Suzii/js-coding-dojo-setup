@@ -10,7 +10,7 @@
     <ui>bdd</ui>
     <extra-mocha-options>--reporter spec --require babel-polyfill --compilers ts:ts-node/register,js:babel-register</extra-mocha-options>
     <test-kind>PATTERN</test-kind>
-    <test-pattern>test/**/*.test.js test/**/*.test.ts</test-pattern>
+    <test-pattern>test/**/*.test.ts</test-pattern>
     <method />
   </configuration>
 </component>
